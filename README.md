@@ -61,7 +61,7 @@ In-depth analysis of the Top 10 categories and brands identified anomalous marke
 # 📈 Category & Brand Dimensional Analysis Visualizations
 ![Overall Funnel Chart](images/category_viewers_vs_purchase_rate.png)
 
-![Overall Funnel Chart](images/Add_to_Car_ Drop_off_Rate_Heatmap.png)
+![Overall Funnel Chart](images/Add_to_Car_Drop_off_Rate_Heatmap.png)
 
 ![Overall Funnel Chart](images/purchase_drop_off_rate_heatmap.png)
 
