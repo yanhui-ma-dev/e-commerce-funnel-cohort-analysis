@@ -1,49 +1,44 @@
-### E-commerce Funnel & Cohort Retention Analysis
+# 🛒 E-commerce Funnel & Cohort Retention Analysis
+> **End-to-end data analytics project identifying conversion bottlenecks and seasonal retention trends for a mid-sized cosmetics online store.**
+
+[![SQL](https://img.shields.io/badge/SQL-BigQuery-blue?logo=google-bigquery&logoColor=white)](https://cloud.google.com/bigquery)
+[![Python](https://img.shields.io/badge/Python-Pandas-green?logo=python&logoColor=white)](https://pandas.pydata.org/)
+[![Visualization](https://img.shields.io/badge/Viz-Seaborn-orange?logo=python&logoColor=white)](https://seaborn.pydata.org/)
+
+---
 
 ## 📌 Project Overview
-This project aims to analyze user behavior data from a mid-sized cosmetics e-commerce company over five timeframes. By constructing a marketing funnel and conducting cohort analysis, it identifies conversion bottlenecks and provides data support for improving customer lifetime value (LTV).
-
-The project utilizes BigQuery to process millions of raw event data points and combines this with Python (Pandas/Seaborn) for advanced analysis and visualization.
+[cite_start]This project analyzes user behavior data (1.6M+ records) to optimize the marketing funnel and customer lifetime value (LTV)[cite: 2]. [cite_start]By leveraging **BigQuery** for large-scale data modeling and **Python** for matrix computations, I identified critical drop-off points and seasonal retention shifts that inform growth strategies[cite: 33, 35].
 
 ## 🛠️ Tech Stack
-Data Warehouse: Google BigQuery (SQL) - for large-scale data cleaning, metric aggregation, and cohort definition.
+* [cite_start]**Data Warehouse:** Google BigQuery (SQL) — Large-scale data cleaning, funnel modeling, and cohort definition[cite: 33, 34].
+* [cite_start]**Analysis:** Python (Pandas, NumPy) — Matrix operations and retention logic [cite: 35, 473-478].
+* [cite_start]**Visualization:** Matplotlib, Seaborn — Funnel plots and retention heatmaps [cite: 41, 42, 479-505].
+* [cite_start]**Environment:** Google Colab[cite: 37, 45].
 
-Programming: Python (Pandas, NumPy) - for matrix operations and refined analysis.
-
-Visualization: Matplotlib, Seaborn - for creating funnel plots and retention heatmaps.
-
-Environment: Google Colab.
-
-Business Context & Metrics Definition
-
-Goal: Increase overall conversion rate from visit to purchase.
-
-# KPIs:
-
-CR (Conversion Rate): \frac{\text{Unique Purchases}}{\text{Unique Visitors}}
-
-Drop-off Rate: 1 - \frac{\text{Users at Stage} n}{\text{Users at Stage} n-1}
+---
 
 ## 📊 Key Analysis & Insights
 
-# 1. Overall Funnel Conversion
-By tracking 1.639 million total visitors, a four-stage funnel from browsing to purchase was constructed.
+### 1. Overall Funnel Conversion (Macro View)
+[cite_start]By tracking **1,639,358** unique visitors, I constructed a four-stage funnel to visualize the journey from landing to purchase [cite: 84-86].
 
-Total Visitors: 1,639,358
+> #### 📈 Funnel Metrics
+> [cite_start]* **Total Visitors:** `1,639,358` [cite: 85]
+> * **Product Viewers:** `1,597,754` [cite: 85]
+> [cite_start]* **Cart Adders:** `398,308` [cite: 86]
+> [cite_start]* **Final Buyers:** `110,518` [cite: 86]
 
-Product Viewers: 1,597,754
-
-Cart Adders: 398,308
-
-Buyers: 110,518
-
-# 📈 Funnel Visualizations
 ![Overall Funnel Chart](images/funnel_conversion_chart.png)
 
-#  Bottleneck Identification: The core bottlenecks lie in the Add-to-Cart stage (75.1% Churn Rate) and the Payment stage (72.3% Churn Rate), indicating significant friction or user hesitation in the checkout process.
+**Core Bottlenecks:**
+* [cite_start]**View → Cart:** Significant **75.1% drop-off**, indicating potential issues with product detail pages or pricing[cite: 135].
+* [cite_start]**Cart → Purchase:** **72.3% drop-off**, suggesting friction in the checkout process or high shipping costs[cite: 136].
 
-# 2. Category & Brand Breakdown (Dimensional Analysis)
-In-depth analysis of the Top 10 categories and brands identified anomalous market segments.
+---
+
+### 2. Category & Brand Breakdown (Dimensional Analysis)
+[cite_start]A granular breakdown reveals that conversion performance varies significantly across different product segments[cite: 161, 261].
 
 | Category ID | Brand | Viewers | Add-to-Cart Rate | Purchase Rate |
 | :--- | :--- | :--- | :--- | :--- |
@@ -58,41 +53,41 @@ In-depth analysis of the Top 10 categories and brands identified anomalous marke
 | 1487580013841613016 | None | 26,483 | 6,844 | 1,867 | 25.8% | 27.3% |
 | 1487580005092295511 | grattol | 22,136 | 13,324 | 3,933 | 60.2% | 29.5% |
 
-# 📈 Category & Brand Dimensional Analysis Visualizations
-![Overall Funnel Chart](images/category_viewers_vs_purchase_rate.png)
+![Category Viewers vs Purchase Rate](images/category_viewers_vs_purchase_rate.png)
 
-![Overall Funnel Chart](images/Add_to_Car_Drop_off_Rate_Heatmap.png)
+#### **Drop-off Heatmap Insights**
+| Add-to-Cart Drop-off | Purchase Drop-off |
+| :---: | :---: |
+| ![Add-to-Cart Heatmap](images/Add_to_Cart_Drop_off_Rate_Heatmap.png) | ![Purchase Heatmap](images/purchase_drop_off_rate_heatmap.png) |
 
-![Overall Funnel Chart](images/purchase_drop_off_rate_heatmap.png)
+* [cite_start]**Friction Identification:** Specific brands like **"kapous" (ID ...13016)** exhibit extreme cart abandonment rates of **88%**[cite: 273, 299].
+* [cite_start]**High Potential:** Items from **"runail"** maintain high engagement (76.4% add-to-cart) but suffer from a **69% payment drop-off**, representing a prime candidate for checkout optimization[cite: 273].
 
-# Insight: 
-# High Interest, Low Purchase: Some high-traffic categories (e.g., Category ID ...95511) had an add-to-cart rate of 56.5%, but a low final purchase conversion rate.
+---
 
-Certain categories (ID ...13016) from "kapous" and categories (ID ...64926) from "None" were identified with a churn rate as high as 88% and 84% at the cart stage. 
+### 3. Cohort Retention (User Behavior Analysis)
+[cite_start]Users were segmented by their first purchase month to track loyalty over a 5-month period[cite: 347, 393].
 
-Additionally, those two certain category IDs and categories (ID ...95511) from "grattol" were also identified with a churn rate as high as 70%-74% at the payment stage. 
+![Cohort Retention Rate Heatmap](images/cohort_retention_rate_heatmap.png)
 
-# 3. Cohort Retention (User Behavior Analysis)
-Segment users by their first purchase month and analyze retention patterns over time.
+**Insights on Retention Decay:**
+* [cite_start]**Significant Decline:** New users from Oct 2019 had an **18.5% Month-1 retention**, whereas Dec 2019 users dropped to **8.5%** [cite: 432-449].
+* **Magnitude:** This represents a **54.1% decrease** in early retention, suggesting that holiday shoppers (Q4 promotions) have lower long-term loyalty compared to standard-period customers.
 
-# Insights - Significant Decline in Early Retention
+---
 
-New users acquired in Nov and Dec 2019 showed a Month 1 retention of only 9.8% and 8.5%, a 47%-54% decrease compared to the 18.5% recorded for the Oct 2019 cohort.
+## 🚀 Strategic Recommendations
+[cite_start]Based on the data-driven insights, I propose the following business optimizations[cite: 28]:
 
-Seasonal User Quality: While Q4 promotions drove high initial acquisition, the retention heatmap reveals that these holiday shoppers have lower long-term loyalty than standard-period users.
+* [cite_start]**🎯 Targeted Retargeting:** Deploy abandoned cart email/ads for categories with >50% churn but high add-to-cart rates (e.g., `grattol`, `runail`)[cite: 29].
+* [cite_start]**💳 Checkout Experience:** Minimize payment friction (72.3% drop-off) by offering guest checkouts, one-click payments, or transparent shipping costs[cite: 30].
+* [cite_start]**📧 Lifecycle Management:** Implement an automated **"Welcome Email Series"** specifically for peak-season cohorts to stabilize the rapid Month-1 retention decline[cite: 31].
 
-
-# 📈 Cohort Visualizations
-![Overall Funnel Chart](images/cohort_retention_rate_heatmap.png)
-
-## 🚀 Actionable Recommendations Based on data insights, the following business optimization strategies are proposed:
-Retargeting Strategy: Target categories with high add-to-cart but low conversion rates (e.g., categories with add-to-cart churn rate > 50%) with targeted advertising.
-
-Optimize Payment Experience: Given the 72.3% churn rate at checkout, it is recommended to review the payment process, shipping fee settings, or simplify the registration process.
-
-User Lifecycle Management: Create an automated "Welcome Email Series" for new users, focusing on optimizing first-month retention.
+---
 
 ## 📂 Project Structure
-Step 1: BigQuery SQL queries - Raw data cleaning and funnel model construction.
-Step 2: Python Analysis - Category churn rate calculation and visualization.
-Step 3: Cohort Matrix - Retention matrix generation and heatmap drawing.
+* `01_data_preprocessing.sql`: SQL scripts for raw data cleaning in BigQuery.
+* `02_funnel_analysis.sql`: Logic for multi-stage funnel and dimensional breakdown.
+* `03_cohort_retention_logic.sql`: SQL for cohort definition and retention rate computation.
+* `cosmetics_funnel_viz.ipynb`: Python notebook for Seaborn visualizations and matrix analysis.
+
