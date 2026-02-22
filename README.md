@@ -72,14 +72,20 @@ Tracked **1,639,358 unique visitors** across a four-stage funnel:
 
 Conversion performance varies significantly by product category and brand.
 
-| Category ID | Brand | Viewers | Cart Adders | Buyers | Add-to-Cart Rate | Purchase Rate |
-|-------------|-------|---------|-------------|--------|------------------|---------------|
+| category_id | brand | viewers | cart_adders | buyers | add_to_cart_rate | purchase_rate |
+| :--- | :--- | ---: | ---: | ---: | ---: | ---: |
 | 1602943681873052386 | grattol | 83,670 | 36,398 | 12,594 | 43.5% | 34.6% |
+| 1487580013950664926 | None | 69,436 | 11,283 | 2,953 | 16.2% | 26.2% |
 | 1487580013841613016 | kapous | 61,251 | 7,463 | 2,431 | 12.2% | 32.6% |
+| 1487580005092295511 | None | 52,449 | 31,086 | 11,020 | 59.3% | 35.5% |
 | 1487580005134238553 | runail | 27,225 | 20,807 | 6,465 | 76.4% | 31.1% |
-| 1487580005092295511 | grattol | 22,136 | 13,324 | 3,933 | 60.2% | 29.5% |
 
 ![Category Viewers vs Purchase Rate](images/category_viewers_vs_purchase_rate.png)
+
+#### **Drop-off Heatmap Insights**
+| Add-to-Cart Drop-off | Purchase Drop-off |
+| :---: | :---: |
+| ![Add-to-Cart Heatmap](images/Add_to_Cart_Drop_off_Rate_Heatmap.png) | ![Purchase Heatmap](images/purchase_drop_off_rate_heatmap.png) |
 
 ### Brand-Level Insights
 
