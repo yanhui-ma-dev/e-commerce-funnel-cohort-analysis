@@ -38,7 +38,7 @@ Cart Adders: 398,308
 Buyers: 110,518
 
 # 📈 Funnel Visualizations
-funnel_conversion_chart.png
+images/funnel_conversion_chart.png
 
 #  Bottleneck Identification: The core bottlenecks lie in the Add-to-Cart stage (75.1% Churn Rate) and the Payment stage (72.3% Churn Rate), indicating significant friction or user hesitation in the checkout process.
 
@@ -59,11 +59,11 @@ In-depth analysis of the Top 10 categories and brands identified anomalous marke
 | 1487580005092295511 | grattol | 22,136 | 13,324 | 3,933 | 60.2% | 29.5% |
 
 # 📈 Category & Brand Dimensional Analysis Visualizations
-category_viewers_vs_purchase_rate.png
+images/category_viewers_vs_purchase_rate.png
 
-Add_to_Car_ Drop_off_Rate_Heatmap.png
+images/Add_to_Car_ Drop_off_Rate_Heatmap.png
 
-purchase_drop_off_rate_heatmap.png
+images/purchase_drop_off_rate_heatmap.png
 
 # Insight: 
 # High Interest, Low Purchase: Some high-traffic categories (e.g., Category ID ...95511) had an add-to-cart rate of 56.5%, but a low final purchase conversion rate.
@@ -83,7 +83,7 @@ Seasonal User Quality: While Q4 promotions drove high initial acquisition, the r
 
 
 # 📈 Cohort Visualizations
-cohort_retention_rate_heatmap.png
+images/cohort_retention_rate_heatmap.png
 
 ## 🚀 Actionable Recommendations Based on data insights, the following business optimization strategies are proposed:
 Retargeting Strategy: Target categories with high add-to-cart but low conversion rates (e.g., categories with add-to-cart churn rate > 50%) with targeted advertising.
