@@ -8,37 +8,37 @@
 ---
 
 ## 📌 Project Overview
-[cite_start]This project analyzes user behavior data (1.6M+ records) to optimize the marketing funnel and customer lifetime value (LTV)[cite: 2]. [cite_start]By leveraging **BigQuery** for large-scale data modeling and **Python** for matrix computations, I identified critical drop-off points and seasonal retention shifts that inform growth strategies[cite: 33, 35].
+This project analyzes user behavior data (1.6M+ records) to optimize the marketing funnel and customer lifetime value (LTV). By leveraging **BigQuery** for large-scale data modeling and **Python** for matrix computations, I identified critical drop-off points and seasonal retention shifts that inform growth strategies.
 
 ## 🛠️ Tech Stack
-* [cite_start]**Data Warehouse:** Google BigQuery (SQL) — Large-scale data cleaning, funnel modeling, and cohort definition[cite: 33, 34].
-* [cite_start]**Analysis:** Python (Pandas, NumPy) — Matrix operations and retention logic [cite: 35, 473-478].
-* [cite_start]**Visualization:** Matplotlib, Seaborn — Funnel plots and retention heatmaps [cite: 41, 42, 479-505].
-* [cite_start]**Environment:** Google Colab[cite: 37, 45].
+* **Data Warehouse:** Google BigQuery (SQL) — Large-scale data cleaning, funnel modeling, and cohort definition.
+* **Analysis:** Python (Pandas, NumPy) — Matrix operations and retention logic.
+* **Visualization:** Matplotlib, Seaborn — Funnel plots and retention heatmaps.
+* **Environment:** Google Colab.
 
 ---
 
 ## 📊 Key Analysis & Insights
 
 ### 1. Overall Funnel Conversion (Macro View)
-[cite_start]By tracking **1,639,358** unique visitors, I constructed a four-stage funnel to visualize the journey from landing to purchase [cite: 84-86].
+By tracking **1,639,358** unique visitors, I constructed a four-stage funnel to visualize the journey from landing to purchase.
 
 > #### 📈 Funnel Metrics
-> [cite_start]* **Total Visitors:** `1,639,358` [cite: 85]
-> * **Product Viewers:** `1,597,754` [cite: 85]
-> [cite_start]* **Cart Adders:** `398,308` [cite: 86]
-> [cite_start]* **Final Buyers:** `110,518` [cite: 86]
+> * **Total Visitors:** `1,639,358` 
+> * **Product Viewers:** `1,597,754` 
+> * **Cart Adders:** `398,308` 
+> * **Final Buyers:** `110,518`
 
 ![Overall Funnel Chart](images/funnel_conversion_chart.png)
 
 **Core Bottlenecks:**
-* [cite_start]**View → Cart:** Significant **75.1% drop-off**, indicating potential issues with product detail pages or pricing[cite: 135].
-* [cite_start]**Cart → Purchase:** **72.3% drop-off**, suggesting friction in the checkout process or high shipping costs[cite: 136].
+* **View → Cart:** Significant **75.1% drop-off**, indicating potential issues with product detail pages or pricing.
+* **Cart → Purchase:** **72.3% drop-off**, suggesting friction in the checkout process or high shipping costs.
 
 ---
 
 ### 2. Category & Brand Breakdown (Dimensional Analysis)
-[cite_start]A granular breakdown reveals that conversion performance varies significantly across different product segments[cite: 161, 261].
+A granular breakdown reveals that conversion performance varies significantly across different product segments.
 
 | Category ID | Brand | Viewers | Add-to-Cart Rate | Purchase Rate |
 | :--- | :--- | :--- | :--- | :--- |
@@ -60,28 +60,28 @@
 | :---: | :---: |
 | ![Add-to-Cart Heatmap](images/Add_to_Cart_Drop_off_Rate_Heatmap.png) | ![Purchase Heatmap](images/purchase_drop_off_rate_heatmap.png) |
 
-* [cite_start]**Friction Identification:** Specific brands like **"kapous" (ID ...13016)** exhibit extreme cart abandonment rates of **88%**[cite: 273, 299].
-* [cite_start]**High Potential:** Items from **"runail"** maintain high engagement (76.4% add-to-cart) but suffer from a **69% payment drop-off**, representing a prime candidate for checkout optimization[cite: 273].
+* **Friction Identification:** Specific brands like **"kapous" (ID ...13016)** exhibit extreme cart abandonment rates of **88%**.
+* **High Potential:** Items from **"runail"** maintain high engagement (76.4% add-to-cart) but suffer from a **69% payment drop-off**, representing a prime candidate for checkout optimization.
 
 ---
 
 ### 3. Cohort Retention (User Behavior Analysis)
-[cite_start]Users were segmented by their first purchase month to track loyalty over a 5-month period[cite: 347, 393].
+Users were segmented by their first purchase month to track loyalty over a 5-month period.
 
 ![Cohort Retention Rate Heatmap](images/cohort_retention_rate_heatmap.png)
 
 **Insights on Retention Decay:**
-* [cite_start]**Significant Decline:** New users from Oct 2019 had an **18.5% Month-1 retention**, whereas Dec 2019 users dropped to **8.5%** [cite: 432-449].
+* **Significant Decline:** New users from Oct 2019 had an **18.5% Month-1 retention**, whereas Dec 2019 users dropped to **8.5%**.
 * **Magnitude:** This represents a **54.1% decrease** in early retention, suggesting that holiday shoppers (Q4 promotions) have lower long-term loyalty compared to standard-period customers.
 
 ---
 
 ## 🚀 Strategic Recommendations
-[cite_start]Based on the data-driven insights, I propose the following business optimizations[cite: 28]:
+Based on the data-driven insights, I propose the following business optimizations:
 
-* [cite_start]**🎯 Targeted Retargeting:** Deploy abandoned cart email/ads for categories with >50% churn but high add-to-cart rates (e.g., `grattol`, `runail`)[cite: 29].
-* [cite_start]**💳 Checkout Experience:** Minimize payment friction (72.3% drop-off) by offering guest checkouts, one-click payments, or transparent shipping costs[cite: 30].
-* [cite_start]**📧 Lifecycle Management:** Implement an automated **"Welcome Email Series"** specifically for peak-season cohorts to stabilize the rapid Month-1 retention decline[cite: 31].
+* **🎯 Targeted Retargeting:** Deploy abandoned cart email/ads for categories with >50% churn but high add-to-cart rates (e.g., `grattol`, `runail`).
+* **💳 Checkout Experience:** Minimize payment friction (72.3% drop-off) by offering guest checkouts, one-click payments, or transparent shipping costs.
+* **📧 Lifecycle Management:** Implement an automated **"Welcome Email Series"** specifically for peak-season cohorts to stabilize the rapid Month-1 retention decline.
 
 ---
 
