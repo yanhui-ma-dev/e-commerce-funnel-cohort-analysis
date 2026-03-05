@@ -179,7 +179,7 @@ Implement automated post-purchase onboarding and retention campaigns, especially
 ## 📊 Interactive Dashboard
 
 🔗 **Live Looker Studio Dashboard:**  
-[View Commercial Performance Dashboard][https://lookerstudio.google.com/reporting/91f460de-0891-42bc-8ebd-84e30c8ededa/page/2fMqF?s=oJ5813HUVeA]
+[View Commercial Performance Dashboard]https://lookerstudio.google.com/reporting/91f460de-0891-42bc-8ebd-84e30c8ededa/page/2fMqF?s=oJ5813HUVeA
 
 > Includes channel-level ROAS, CAC trends, AOV shifts, and budget allocation simulation.
 
@@ -223,8 +223,8 @@ To extend funnel insights into marketing performance diagnostics, a simulated ch
 - `01_data_preprocessing.sql` — Data cleaning in BigQuery  
 - `02_funnel_analysis.sql` — Funnel and dimensional modeling logic  
 - `03_cohort_retention_logic.sql` — Cohort construction and retention calculation
-- `04_calculate aov.sql
-- `05_Simulated_Channel.sql
+- `04_calculate aov.sql  
+- `05_Simulated_Channel.sql 
 - `06_Simulated_Budget_Allocation.sql
 - `cosmetics_funnel_viz.ipynb` — Python visualization and analysis notebook
 
