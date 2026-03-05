@@ -176,6 +176,30 @@ Reduce payment friction by:
 Implement automated post-purchase onboarding and retention campaigns, especially for Q4-acquired cohorts.
 
 ---
+## 📊 Interactive Dashboard
+
+🔗 **Live Looker Studio Dashboard:**  
+[View Commercial Performance Dashboard][https://lookerstudio.google.com/reporting/91f460de-0891-42bc-8ebd-84e30c8ededa/page/2fMqF?s=oJ5813HUVeA]
+
+> Includes channel-level ROAS, CAC trends, AOV shifts, and budget allocation simulation.
+
+## 📈 Commercial Layer Extension##
+
+To extend funnel insights into marketing performance diagnostics, a simulated channel cost layer was introduced.
+
+# Key Additions
+	•	Channel-level ROAS and CAC
+	•	Efficiency dispersion analysis
+	•	Budget reallocation simulation
+	•	December ROAS compression decomposition
+
+## Actionable Insights
+	•	Validate December efficiency compression before budget expansion
+	•	Reallocate spend toward high-AOV / stable-ROAS channels
+	•	Avoid scaling acquisition until Cart → Purchase friction improves
+	•	Prioritize capital efficiency over raw traffic growth
+
+---
 
 # 🛠️ Tech Stack
 
@@ -189,7 +213,8 @@ Implement automated post-purchase onboarding and retention campaigns, especially
 - Matplotlib, Seaborn — Funnel visualization and cohort heatmaps  
 
 **Environment:**  
-- Google Colab  
+- Google Colab
+- Google Looker Studio  
 
 ---
 
@@ -197,8 +222,11 @@ Implement automated post-purchase onboarding and retention campaigns, especially
 
 - `01_data_preprocessing.sql` — Data cleaning in BigQuery  
 - `02_funnel_analysis.sql` — Funnel and dimensional modeling logic  
-- `03_cohort_retention_logic.sql` — Cohort construction and retention calculation  
-- `cosmetics_funnel_viz.ipynb` — Python visualization and analysis notebook  
+- `03_cohort_retention_logic.sql` — Cohort construction and retention calculation
+- `04_calculate aov.sql
+- `05_Simulated_Channel.sql
+- `06_Simulated_Budget_Allocation.sql
+- `cosmetics_funnel_viz.ipynb` — Python visualization and analysis notebook
 
 ---
 
@@ -209,6 +237,10 @@ This project demonstrates how behavioral event data can be transformed into:
 - Funnel diagnostics  
 - Revenue impact modeling  
 - Segment-level performance optimization  
-- Cohort-based retention strategy  
+- Cohort-based retention strategy
+- BI dashboard development for ongoing performance monitoring
 
-Bridging technical analytics with measurable business growth.
+Bridging **Raw behavioral data → Performance insights → Capital allocation decisions**
+
+Enabling data-informed growth strategy rather than isolated reporting.
+
