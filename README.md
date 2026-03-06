@@ -1,5 +1,4 @@
 # 🛒 Commercial Funnel & Revenue Opportunity Analysis
-BigQuery + SQL + Looker Studio
 >End-to-end analytics project transforming raw session-level data into commercial insights and an interactive BI dashboard.
 >
 [![SQL](https://img.shields.io/badge/SQL-BigQuery-blue?logo=google-bigquery&logoColor=white)](https://cloud.google.com/bigquery)
@@ -186,14 +185,12 @@ Implement automated post-purchase onboarding and retention campaigns, especially
 
 🔗 [View Commercial Performance Dashboard](https://lookerstudio.google.com/reporting/91f460de-0891-42bc-8ebd-84e30c8ededa/page/2fMqF?s=oJ5813HUVeA)
 
-https://lookerstudio.google.com/xxxxx
+# Dashboard capabilities include:
 
-Dashboard capabilities include:
-
-• Channel performance monitoring  
-• Funnel conversion tracking  
-• Revenue trend analysis  
-• Marketing performance comparison
+• Channel-level ROAS and CAC monitoring
+• Conversion funnel tracking across the customer journey
+• Revenue and AOV performance trends
+• Budget allocation simulation for marketing optimisation
 
 # 📈 Commercial Layer Extension
 
@@ -235,10 +232,15 @@ To extend funnel insights into marketing performance diagnostics, a simulated ch
 # 📂 Project Structure
 
 01_data_preprocessing.sql
+
 02_funnel_analysis.sql
+
 03_cohort_retention_logic.sql
+
 04_calculate_aov.sql
+
 05_Simulated_Channel.sql
+
 06_Simulated_Budget_Allocation.sql
 
 cosmetics_funnel_viz.ipynb
