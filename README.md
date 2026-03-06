@@ -3,7 +3,9 @@
 >
 [![SQL](https://img.shields.io/badge/SQL-BigQuery-blue?logo=google-bigquery&logoColor=white)](https://cloud.google.com/bigquery)
 [![Python](https://img.shields.io/badge/Python-Pandas-green?logo=python&logoColor=white)](https://pandas.pydata.org/)
-[![Visualization](https://img.shields.io/badge/Viz-Matplotlib%20%7C%20Seaborn-orange?logo=python&logoColor=white)](https://seaborn.pydata.org/)
+[![BI](https://img.shields.io/badge/BI-Looker%20Studio-orange?logo=googleanalytics&logoColor=white)](https://lookerstudio.google.com/)
+[![KPI](https://img.shields.io/badge/KPI-Design-blueviolet)]()
+[![Analytics](https://img.shields.io/badge/Analytics-Funnel%20%7C%20Cohort%20%7C%20ROAS-success)]()
 
 ---
 ## 📌 Project Overview
@@ -204,8 +206,11 @@ To extend funnel insights into marketing performance diagnostics, a simulated ch
 Based on the analysis, several commercial optimisation opportunities were identified:
 
 • Validate December efficiency compression before expanding marketing budgets
+
 • Reallocate spend toward high-AOV and stable-ROAS acquisition channels
+
 • Avoid aggressive traffic scaling until Cart → Purchase friction is reduced
+
 • Prioritise capital efficiency rather than raw traffic growth
 
 ---
