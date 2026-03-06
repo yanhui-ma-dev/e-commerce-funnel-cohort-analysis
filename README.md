@@ -1,22 +1,27 @@
-# 🛒 E-commerce Funnel & Cohort Retention Analysis  
-> **End-to-end growth analytics case study identifying conversion bottlenecks, revenue impact, and seasonal retention decay for a mid-sized cosmetics e-commerce store.**
-
+# 🛒 Commercial Funnel & Revenue Opportunity Analysis
+BigQuery + SQL + Looker Studio
+>End-to-end analytics project transforming raw session-level data into commercial insights and an interactive BI dashboard.
+>
 [![SQL](https://img.shields.io/badge/SQL-BigQuery-blue?logo=google-bigquery&logoColor=white)](https://cloud.google.com/bigquery)
 [![Python](https://img.shields.io/badge/Python-Pandas-green?logo=python&logoColor=white)](https://pandas.pydata.org/)
 [![Visualization](https://img.shields.io/badge/Viz-Matplotlib%20%7C%20Seaborn-orange?logo=python&logoColor=white)](https://seaborn.pydata.org/)
 
 ---
-
 ## 📌 Project Overview
 
-This project analyzes **1.6M+ user behavior records** to:
+Digital businesses often struggle to connect user behaviour data with 
+commercial outcomes such as revenue and conversion performance.
 
-- Identify critical funnel conversion bottlenecks  
-- Quantify revenue impact of optimization scenarios  
-- Analyze brand-level performance differences  
-- Uncover seasonal cohort retention decay patterns  
+This project analyzes **1.6M+ user behaviour records** to build a scalable 
+analytics workflow that transforms raw behavioural data into actionable 
+commercial KPIs.
 
-Using **BigQuery (SQL)** for large-scale modeling and **Python** for matrix computation and visualization, this project translates behavioral data into actionable growth strategy insights.
+The analysis supports business teams in:
+
+• Evaluating marketing channel performance  
+• Identifying conversion bottlenecks in the customer funnel  
+• Quantifying potential revenue opportunities  
+• Enabling data-driven decision making
 
 ---
 
@@ -176,28 +181,37 @@ Reduce payment friction by:
 Implement automated post-purchase onboarding and retention campaigns, especially for Q4-acquired cohorts.
 
 ---
+
 ## 📊 Interactive Dashboard
 
-🔗 **Live Looker Studio Dashboard:**  
-[View Commercial Performance Dashboard](https://lookerstudio.google.com/reporting/91f460de-0891-42bc-8ebd-84e30c8ededa/page/2fMqF?s=oJ5813HUVeA)
+🔗 [View Commercial Performance Dashboard](https://lookerstudio.google.com/reporting/91f460de-0891-42bc-8ebd-84e30c8ededa/page/2fMqF?s=oJ5813HUVeA)
 
-> Includes channel-level ROAS, CAC trends, AOV shifts, and budget allocation simulation.
+https://lookerstudio.google.com/xxxxx
+
+Dashboard capabilities include:
+
+• Channel performance monitoring  
+• Funnel conversion tracking  
+• Revenue trend analysis  
+• Marketing performance comparison
 
 # 📈 Commercial Layer Extension
 
 To extend funnel insights into marketing performance diagnostics, a simulated channel cost layer was introduced.
 
 # Key Additions
-	•	Channel-level ROAS and CAC
-	•	Efficiency dispersion analysis
-	•	Budget reallocation simulation
-	•	December ROAS compression decomposition
 
-## Actionable Insights
-	•	Validate December efficiency compression before budget expansion
-	•	Reallocate spend toward high-AOV / stable-ROAS channels
-	•	Avoid scaling acquisition until Cart → Purchase friction improves
-	•	Prioritize capital efficiency over raw traffic growth
+• Channel-level ROAS and CAC modelling
+• Efficiency dispersion analysis
+• Budget reallocation simulation
+• December ROAS compression diagnostics
+
+# Actionable Insights
+
+• Validate December efficiency compression before budget expansion
+• Reallocate spend toward high-AOV / stable-ROAS channels
+• Avoid scaling acquisition until Cart → Purchase friction improves
+• Prioritise capital efficiency over raw traffic growth
 
 ---
 
@@ -206,12 +220,12 @@ To extend funnel insights into marketing performance diagnostics, a simulated ch
 **Data Warehouse:**  
 - Google BigQuery (SQL) — Data cleaning, funnel modeling, cohort logic  
 
-**Analysis & Computation:**  
+**Analysis:**  
 - Python (Pandas, NumPy) — Matrix operations and retention modeling  
 
 **Visualization & BI:**  
 - Matplotlib, Seaborn — Funnel visualization and cohort heatmaps
-- Google Looker Studio — Interactive performance dashboard 
+- Google Looker Studio
 
 **Environment:**  
 - Google Colab
@@ -220,13 +234,17 @@ To extend funnel insights into marketing performance diagnostics, a simulated ch
 
 # 📂 Project Structure
 
-- `01_data_preprocessing.sql` — Data cleaning in BigQuery  
-- `02_funnel_analysis.sql` — Funnel and dimensional modeling logic  
-- `03_cohort_retention_logic.sql` — Cohort construction and retention calculation
--  04_calculate aov.sql  
--  05_Simulated_Channel.sql 
--  06_Simulated_Budget_Allocation.sql
-- `cosmetics_funnel_viz.ipynb` — Python visualization and analysis notebook
+01_data_preprocessing.sql
+02_funnel_analysis.sql
+03_cohort_retention_logic.sql
+04_calculate_aov.sql
+05_Simulated_Channel.sql
+06_Simulated_Budget_Allocation.sql
+
+cosmetics_funnel_viz.ipynb
+cohort_result.csv
+images/
+README.md
 
 ---
 
