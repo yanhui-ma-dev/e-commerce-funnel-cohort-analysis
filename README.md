@@ -185,34 +185,29 @@ Implement automated post-purchase onboarding and retention campaigns, especially
 
 🔗 [View Commercial Performance Dashboard](https://lookerstudio.google.com/reporting/91f460de-0891-42bc-8ebd-84e30c8ededa/page/2fMqF?s=oJ5813HUVeA)
 
-# Dashboard capabilities include:
+### Dashboard capabilities include:
 
 • Channel-level ROAS and CAC monitoring
 • Conversion funnel tracking across the customer journey
 • Revenue and AOV performance trends
 • Budget allocation simulation for marketing optimisation
 
-# 📈 Commercial Layer Extension
+### 📈 Commercial Layer Extension
 
 To extend funnel insights into marketing performance diagnostics, a simulated channel cost layer was introduced.
 
-# Key Additions
+## Actionable Insights
 
-• Channel-level ROAS and CAC modelling
-• Efficiency dispersion analysis
-• Budget reallocation simulation
-• December ROAS compression diagnostics
+Based on the analysis, several commercial optimisation opportunities were identified:
 
-# Actionable Insights
-
-• Validate December efficiency compression before budget expansion
-• Reallocate spend toward high-AOV / stable-ROAS channels
-• Avoid scaling acquisition until Cart → Purchase friction improves
-• Prioritise capital efficiency over raw traffic growth
+• Validate December efficiency compression before expanding marketing budgets
+• Reallocate spend toward high-AOV and stable-ROAS acquisition channels
+• Avoid aggressive traffic scaling until Cart → Purchase friction is reduced
+• Prioritise capital efficiency rather than raw traffic growth
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 **Data Warehouse:**  
 - Google BigQuery (SQL) — Data cleaning, funnel modeling, cohort logic  
@@ -229,7 +224,7 @@ To extend funnel insights into marketing performance diagnostics, a simulated ch
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 01_data_preprocessing.sql
 
