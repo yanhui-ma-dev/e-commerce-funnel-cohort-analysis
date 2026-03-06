@@ -183,7 +183,7 @@ Implement automated post-purchase onboarding and retention campaigns, especially
 
 > Includes channel-level ROAS, CAC trends, AOV shifts, and budget allocation simulation.
 
-## 📈 Commercial Layer Extension##
+# 📈 Commercial Layer Extension
 
 To extend funnel insights into marketing performance diagnostics, a simulated channel cost layer was introduced.
 
