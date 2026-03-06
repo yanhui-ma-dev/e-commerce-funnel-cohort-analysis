@@ -185,11 +185,14 @@ Implement automated post-purchase onboarding and retention campaigns, especially
 
 🔗 [View Commercial Performance Dashboard](https://lookerstudio.google.com/reporting/91f460de-0891-42bc-8ebd-84e30c8ededa/page/2fMqF?s=oJ5813HUVeA)
 
-### Dashboard capabilities include:
+Dashboard capabilities include:
 
 • Channel-level ROAS and CAC monitoring
+
 • Conversion funnel tracking across the customer journey
+
 • Revenue and AOV performance trends
+
 • Budget allocation simulation for marketing optimisation
 
 ### 📈 Commercial Layer Extension
