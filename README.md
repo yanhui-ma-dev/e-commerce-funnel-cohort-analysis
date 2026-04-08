@@ -10,19 +10,16 @@
 ---
 ## 📌 Project Overview
 
-Digital businesses often struggle to connect user behaviour data with 
-commercial outcomes such as revenue and conversion performance.
+This project demonstrates an end-to-end analytics engineering workflow, transforming 1.6M+ raw behavioural events into structured, reusable data models and commercial KPIs.
 
-This project analyzes **1.6M+ user behaviour records** to build a scalable 
-analytics workflow that transforms raw behavioural data into actionable 
-commercial KPIs.
+Built using a modular data modelling approach (staging → intermediate → marts), the project standardises funnel, revenue, and retention metrics to support scalable analysis and decision-making.
 
-The analysis supports business teams in:
+Key focus areas include:
 
-• Evaluating marketing channel performance  
-• Identifying conversion bottlenecks in the customer funnel  
-• Quantifying potential revenue opportunities  
-• Enabling data-driven decision making
+• Event-based data modelling  
+• Funnel and cohort transformation logic  
+• Metric standardisation (conversion, AOV, retention)  
+• Revenue impact modelling  
 
 ---
 
